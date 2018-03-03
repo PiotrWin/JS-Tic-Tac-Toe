@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+                <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+        <script src="jquery/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="init" class="text-center">
+                <div id="init-players">
+                    <h2>Choose mode:</h2>
+                    <div id="init-players-buttons">
+                        <div class='circle' id='circle-1'></div>
+                        <button id="init-button-one" class="btn">One player</button>
+                        <button id="init-button-two" class="btn">Two players</button>
+                        <div class='circle' id='circle-2'></div>
+                    </div>
+                </div>
+                <div id="init-board">
+                    <h2>Set board size:</h2>
+                    <input type="number" id="init-board-size" value="3" min="3" max="9" onkeydown="return false"></input>
+                </div>
+                <div id="init-symbol">
+                    <h2 id="init-h2">Choose symbol:</h2>
+                    <h3 id="init-h3">(player 1)</h3>
+                    <div id="init-symbol-buttons">
+                        <div class='circle' id='circle-x'></div>
+                        <button id="init-symbol-x" class="btn">X</button>
+                        <button id="init-symbol-o" class="btn">O</button>
+                        <div class='circle' id='circle-o'></div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" id="init-submit" class="btn btn-primary">Start</button>
+                <p id="error-msg"></p>
+            </div>
+            <div id="board" class="text-center">
+                <div id="board-info">
+                    <span>Current turn: </span><span id="turn-info"></span>
+                </div>
+                <div class="buttons-wrapper">
+                    <div id="board-buttons" class></div>
+                </div>
+                <br><button id="board-reset" class="btn">Reset</button>
+            </div>
+            <div id="finish-info" class="text-center"></div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
