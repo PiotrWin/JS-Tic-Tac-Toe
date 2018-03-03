@@ -1,5 +1,7 @@
 "use strict";
 
+$(document).ready(function() {
+
 let fadeTime = 1000;
 
 let GAME = {
@@ -38,7 +40,7 @@ let GAME = {
         if (this.mode === 1 && this.turn === 2)
             computerTurn();
 
-        $(this.boardButtons).click(() => {
+        $(this.boardButtons).click((event) => {
             if (this.mode === 2 || this.turn === 1) {
                 let i = event.target.value[0];
                 let j = event.target.value[1];
@@ -323,3 +325,5 @@ function markFields(type, id) {
         }
     }
 }
+
+});

@@ -4,7 +4,8 @@
         "$": false,
         "console": false,
         "setTimeout": false,
-        "event": false
+        "event": false,
+        "document": false
     },
   "strict" : "global"
 }
